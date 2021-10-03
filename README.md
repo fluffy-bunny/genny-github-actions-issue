@@ -5,6 +5,8 @@ I am on windows 10 latest
 
 vscode  
 
+The following works fine.  
+
 ```powershell
 genny -in ./internal/genny/sarulabsdi/interface-types.go -out ./pkg/interface-types.go -pkg pkg gen "InterfaceType=IHello"
 ```
