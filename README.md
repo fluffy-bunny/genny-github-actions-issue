@@ -37,7 +37,7 @@ func AddSingletonIHello(builder *di.Builder, implType reflect.Type) {
 
 ## Github actions issue
 
-When I run the same command on github it produces the following output.
+When I run the [same command on github](https://github.com/fluffy-bunny/genny-github-actions-issue/blob/c635df5f719f775486a86efc115e42c8b3db0184/.github/workflows/go.yml#L28) it produces the following output.
 
 **Where did the following go?**
 
