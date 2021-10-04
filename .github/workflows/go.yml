@@ -17,10 +17,11 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v2
         with:
-          go-version: 1.17 
+          go-version: '^1.17'
           
       - name: Install genny
         run: |
+          go version
           go get github.com/cheekybits/genny@latest
 
       - name: generate generics
@@ -41,7 +42,7 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v2
       with:
-        go-version: 1.17
+        go-version: '^1.17'
 
     - name: Build
       run: go build -v ./...
