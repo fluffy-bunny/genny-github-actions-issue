@@ -8,6 +8,9 @@ vscode
 The following works fine.  
 
 ```powershell
+go mod download
+go test ./...
+go install github.com/cheekybits/genny
 genny -in ./internal/genny/sarulabsdi/interface-types.go -out ./pkg/interface-types.go -pkg pkg gen "InterfaceType=IHello"
 ```
 
