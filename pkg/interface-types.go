@@ -4,7 +4,11 @@
 
 package pkg
 
-import "reflect"
+import (
+	"reflect"
+
+	di "github.com/fluffy-bunny/sarulabsdi"
+)
 
 // ReflectTypeIHello used when your service claims to implement IHello
 var ReflectTypeIHello = di.GetInterfaceReflectType((*IHello)(nil))
