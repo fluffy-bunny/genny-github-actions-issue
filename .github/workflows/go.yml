@@ -23,6 +23,8 @@ jobs:
         run: |
           go version
           go get github.com/cheekybits/genny@latest
+          go mod tidy
+          go mod download
 
       - name: generate generics
         run: |
