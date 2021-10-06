@@ -23,11 +23,13 @@ jobs:
         run: |
           go version
           go get github.com/cheekybits/genny@latest
-          go mod tidy
-          go mod download
+         
 
       - name: generate generics
         run: |
+          # NOTE: go mod tidy and go mod download brings everything down so that genny has everthing it needs
+          go mod tidy
+          go mod download
           genny -in ./internal/genny/sarulabsdi/interface-types.go -out ./pkg/interface-types.go -pkg pkg gen "InterfaceType=IHello"
 
       - name: AutoCommit
